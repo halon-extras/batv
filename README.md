@@ -9,13 +9,13 @@ Follow the [instructions](https://docs.halon.io/manual/comp_install.html#install
 ### Ubuntu
 
 ```
-apt-get install halon-extras-clamav
+apt-get install halon-extras-batv
 ```
 
 ### RHEL
 
 ```
-yum install halon-extras-clamav
+yum install halon-extras-batv
 ```
 
 ## Exported functions

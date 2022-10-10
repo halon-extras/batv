@@ -20,6 +20,8 @@ yum install halon-extras-batv
 
 ## Exported functions
 
+These functions needs to be [imported](https://docs.halon.io/hsl/structures.html#import) from the `extras://batv` module path.
+
 ### batv_sign(address, key, opts)
 
 Sign a email address.

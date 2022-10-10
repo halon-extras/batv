@@ -1,6 +1,26 @@
+# BATV
+
 This example provides a [BATV](http://mipassoc.org/batv/draft-levine-smtp-batv-01.txt) (Bounce Tag Address Validation) implementation, our [documentation](https://support.halon.io/hc/en-us/articles/360002129740) shows how to implement it properly.
 
-## batv_sign(address, key, opts)
+## Installation
+
+Follow the [instructions](https://docs.halon.io/manual/comp_install.html#installation) in our manual to add our package repository and then run the below command.
+
+### Ubuntu
+
+```
+apt-get install halon-extras-clamav
+```
+
+### RHEL
+
+```
+yum install halon-extras-clamav
+```
+
+## Exported functions
+
+### batv_sign(address, key, opts)
 
 Sign a email address.
 
@@ -17,7 +37,7 @@ The following options are available in the **opts** array.
 - keyid `number` - A key id between 0-9. The default is 0.
 - days `number` - Days the tag should be valid. The default is 7 days.
 
-## batv_verify(address, keys, opts)
+### batv_verify(address, keys, opts)
 
 Verify a BATV signed email address.
 
@@ -43,7 +63,7 @@ The result string may be any of
 | checksum | bad     | BATV tag is bad (invalid key)                                         |
 | expired  | bad     | BATV tag has expired                                                  |
 
-## batv_strip(address)
+### batv_strip(address)
 
 Strip the BATV tag from an email address, this is the inverse process of batv_sign. If the address is not signed, it's returned as is.
 

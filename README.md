@@ -1,6 +1,6 @@
 # BATV
 
-This example provides a [BATV](http://mipassoc.org/batv/draft-levine-smtp-batv-01.txt) (Bounce Tag Address Validation) implementation, our [documentation](https://support.halon.io/hc/en-us/articles/360002129740) shows how to implement it properly.
+This example provides a [BATV](http://mipassoc.org/batv/draft-levine-smtp-batv-01.txt) (Bounce Tag Address Validation) implementation, our [documentation](https://docs.halon.io/kb/signing-and-validation/batv/) shows how to implement it properly.
 
 ## Installation
 

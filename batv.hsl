@@ -20,7 +20,7 @@ function batv_verify($sender, $keys, $opts = [])
 	$secret = hmac_sha1($keys[$id], $id.$exp.$sender[16:])[:6];
 	if ($secret != $sender[9:15]) return "checksum";
 	$cur = floor(time() / (3600 * 24)) % 1000;
-	if ($exp < $days and $cur >= 1000 - 7) $cur = 0;
+	if ($exp < $days and $cur >= 1000 - $days) $cur = 0;
 	if ($exp < $cur) return "expired";
 	return "pass";
 }
